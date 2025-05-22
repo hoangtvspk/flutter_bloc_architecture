@@ -56,7 +56,7 @@ platform :android do
         UI.error("Firebase App ID not set or APK not found, skipping Firebase upload.")
     end
 
-    json_key_file = "/tmp/google-play-service-account.json"
+    json_key_file = "google-play-service-account.json"
     if env == "prod"
         begin
             supply(track: "production", apk: apk_path, json_key: json_key_file)

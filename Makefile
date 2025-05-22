@@ -94,6 +94,7 @@ clean:
 	flutter clean
 	rm -rf ios/Pods ios/Podfile.lock pubspec.lock
 
+# Lệnh chạy ứng dụng trong release mode
 run-release:
 	flutter run --flavor prod --dart-define=ENVIRONMENT=prod --release
 
